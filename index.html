@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+  
+  <!-- Import Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous">
+  <style>
+    /* Set the background color for dark mode */
+    body.dark-mode {
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    /* Set the color for links in dark mode */
+    body.dark-mode a {
+      color: #fff;
+    }
+    /* Set the background color for teal buttons */
+    .btn-teal {
+      background-color: #008080;
+      color: #fff;
+    }
+    /* Set the background color for teal buttons in dark mode */
+    body.dark-mode .btn-teal {
+      background-color: #4db6ac;
+    }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  height: 100%;
+  width: 100%;
+  
+}
+
+@media (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow: auto;
+  }
+}
+#board {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+
+  </style>
+</head>
+<body>
+	<center>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://github.com/SanshruthR">Chess Unblocked</a>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+    <!-- Chess Board -->
+    <div id="board"></div>
+	<div class="container mt-5">
+		<center>
+      <p>A chess website that isn't blocked by fortinet.</p></center>
+      <button class="btn btn-teal" id="darkButton">Dark Mode</button>
+	
+
+
+      
+  </div></center>
+
+  <!-- Import jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Import ChessboardJS -->
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+
+  <!-- Dark Mode Toggle -->
+  <script type='text/javascript'>
+    function toggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
+  <!-- Chess Board Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.js"></script>
+
+</body>
+<script src="./script.js"></script>
+	
+
+</html>
